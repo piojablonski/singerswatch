@@ -1,0 +1,20 @@
+{
+  "name": "singerswatchinfo",
+  "version": "1.0.0",
+  "description": "web page with info abput Singer's Watch project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piojablonski/singerswatchinfo.git"
+  },
+  "author": "Piotr Jablonski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piojablonski/singerswatchinfo/issues"
+  },
+  "homepage": "https://github.com/piojablonski/singerswatchinfo#readme",
+  "devDependencies": {}
+}

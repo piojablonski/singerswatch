@@ -1,0 +1,21 @@
+{
+  "name": "singerswatchinfo",
+  "description": "web page with info abput Singer's Watch project",
+  "main": "index.html",
+  "authors": [
+    "Piotr Jablonski"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/piojablonski/singerswatchinfo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

@@ -1,0 +1,30 @@
+@import "core/style/variables";
+@import "core/style/mixins";
+@import "core/style/layout";
+
+$baseline-grid:            8px !default;
+$layout-gutter-width:      ($baseline-grid * 2) !default;
+
+$layout-breakpoint-xs:     0px !default;
+$layout-breakpoint-sm:     768px !default;
+$layout-breakpoint-md:     1920px !default;
+$layout-breakpoint-lg:     1920px !default;
+
+@import "core/services/layout/layout";
+
+
+.flex-align-self-start {
+  align-self: flex-start;
+}
+
+.flex-align-self-center {
+  align-self: center;
+}
+
+.flex-align-self-stretch {
+  align-self: center;
+}
+
+.flex-align-self-end {
+  align-self: flex-end;
+}

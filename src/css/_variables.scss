@@ -1,0 +1,47 @@
+@import "responsiveMixins";
+
+/*
+
+MARGINESY PIONOWE
+od 768 do nieskonczoności:
+M0 9px
+M1 15px
+M2 28px
+M3 48px
+M4 80px
+
+od 320 do 767 zmieniają się tak:
+M0 9px
+M1 13px
+M2 28px
+M3 49px
+M4 60px
+
+TEKSTY
+H1 Roboto, Black, 27pt, 33pt
+H2 Roboto, Regular, 18pt, 22pt
+H3 Roboto, Bold, 21pt, 25pt
+Body Roboto, Regular, 14pt, 24pt
+
+Teksty menu i stopki opisane na projekcie
+
+KOLORY
+Ciemny szary #585868
+Jasny szary #F2F2F2
+Szampański #D3CEB7
+
+*/
+
+
+$sw-dark-gray: #585868;
+$sw-light-gray: #F2F2F2;
+$sw-champagne: #D3CEB7;
+
+$margins-tablet:     9px, 15px, 28px, 48px, 80px, 75px;
+$margins-smartphone: 9px, 13px, 28px, 49px, 60px, 24px;
+$margins-names: 0, 1, 2, 3, 4, '-layout-margin';
+
+$margin-layout-tablet : 75px;
+$margin-layout-smartphone : 24px;
+
+

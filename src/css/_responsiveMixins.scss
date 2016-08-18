@@ -1,0 +1,73 @@
+﻿//$smartphone-width: 480px;
+$tablet-min-width: 768px;
+
+@mixin mq-smartphone {
+  @media (max-width: #{$tablet-min-width - 1px}) {
+    @content;
+  }
+}
+
+
+
+@mixin mq-smartphone-landscape {
+  @media (max-width: #{$tablet-min-width - 1px}) and (orientation : landscape) {
+    @content;
+  }
+}
+
+@mixin mq-smartphone-portrait {
+  @media (max-width: #{$tablet-min-width - 1px}) and (orientation : portrait) {
+    @content;
+  }
+}
+
+@mixin mq-smartphone-small-height {
+  @media (max-width: #{$tablet-min-width - 1px}) and (max-height: 481px) and (orientation : portrait) {
+    @content;
+  }
+}
+
+@mixin mq-tablet {
+  @media (min-width: #{$tablet-min-width}) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-landscape {
+  @media (min-width: #{$tablet-min-width}) and (orientation : landscape) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-landscape-small-height {
+  @media (min-width: #{$tablet-min-width}) and (max-height: 450px) and (orientation : landscape) {
+    @content;
+  }
+}
+
+
+@mixin mq-tablet-landscape-medium-height {
+  @media (min-width: #{$tablet-min-width}) and (max-height: 601px) and (orientation : landscape) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-portrait {
+  @media (min-width: #{$tablet-min-width}) and (orientation : portrait) {
+    @content;
+  }
+}
+
+@mixin mq-property($property, $val-tablet, $val-smartphone: null) {
+  #{$property} : $val-tablet;
+
+
+  @if $val-smartphone == null {
+    $val-tablet: $val-laptop;
+  }
+
+
+  @include mq-smartphone {
+    #{$property} : $val-smartphone;
+  }
+}

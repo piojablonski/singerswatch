@@ -1,0 +1,44 @@
+/*
+H1 Roboto, Black, 27pt, 33pt
+H2 Roboto, Regular, 18pt, 22pt
+H3 Roboto, Bold, 21pt, 25pt
+Body Roboto, Regular, 14pt, 24pt
+
+*/
+
+@mixin font--h1 {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 18px;
+}
+@mixin font--h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin font--h3 {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+@mixin font--body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.font--h1 {
+    @include font--h1();
+}
+
+.font--h2 {
+    @include font--h2();
+}
+
+.font--h3 {
+    @include font--h3();
+}
+
+.font--body {
+    @include font--body();
+}

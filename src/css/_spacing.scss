@@ -1,0 +1,51 @@
+@import "variables";
+@for $i from 1 through length($margins-tablet) {
+  
+  $name: nth($margins-names, $i);
+
+  .mt#{$name} {
+    @include mq-property(margin-top, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .mb#{$name} {
+    @include mq-property(margin-bottom, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .ml#{$name} {
+    @include mq-property(margin-left, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .mr#{$name} {
+    @include mq-property(margin-right, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+
+  .mv#{$name} {
+    @include mq-property(margin-left, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+    @include mq-property(margin-right, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+
+  .mh#{$name} {
+    @include mq-property(margin-top, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+    @include mq-property(margin-bottom, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+
+  .pt#{$name} {
+    @include mq-property(padding-top, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .pb#{$name} {
+    @include mq-property(padding-bottom, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .pl#{$name} {
+    @include mq-property(padding-left, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+  .pr#{$name} {
+    @include mq-property(padding-right, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+
+  .pv#{$name} {
+    @include mq-property(padding-left, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+    @include mq-property(padding-right, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+
+  .ph#{$name} {
+    @include mq-property(padding-top, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+    @include mq-property(padding-bottom, nth($margins-tablet, $i), nth($margins-smartphone, $i));
+  }
+}

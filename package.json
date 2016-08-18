@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --config webpack.config --progress --colors --watch",
-    "build": "webpack --config webpack.config --progress --colors"
+    "build": "webpack --config webpack.config --progress --colors",
+    "build-p": "webpack --config webpack.config  --progress --colors --optimize-max-chunks --optimize-min-chunk-size --optimize-minimize --optimize-occurence-order --optimize-dedupe",
+    "watch-p": "webpack --config webpack.config  --progress --colors --optimize-max-chunks --optimize-min-chunk-size --optimize-minimize --optimize-occurence-order --optimize-dedupe --watch"
   },
   "repository": {
     "type": "git",
